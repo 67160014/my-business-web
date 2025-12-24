@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Cat Care Home</title>
+    <style>
+        /* ใส่ CSS เดียวกับด้านบน */
+        :root { --pastel-pink: #fce4ec; --pastel-blue: #e3f2fd; --deep-pink: #f06292; --deep-blue: #64b5f6; }
+        body { font-family: 'Kanit', sans-serif; margin: 0; background-color: #fffafb; }
+        header { background-color: var(--pastel-blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--pastel-pink); }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+        nav a { text-decoration: none; color: #5c6bc0; font-weight: bold; }
+        main { padding: 40px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        
+        /* สไตล์ฟอร์มติดต่อ */
+        .contact-form { background: white; padding: 30px; border-radius: 20px; border: 2px solid var(--pastel-blue); }
+        .contact-form label { display: block; margin-bottom: 8px; font-weight: bold; color: #5c6bc0; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid var(--pastel-pink); border-radius: 10px; box-sizing: border-box; }
+        .contact-form button { background-color: var(--deep-pink); color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; font-weight: bold; }
+        .contact-form button:hover { background-color: #e91e63; }
+        
+        .map-container iframe { width: 100%; border-radius: 20px; border: 4px solid var(--pastel-blue); }
+        footer { background-color: var(--pastel-pink); text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/loogocat.png" alt="Logo" width="60"><strong>Cat Care Home</strong></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>ส่งข้อความหาเรา</h2> <form action="#" method="post">
+                <label for="name">ชื่อ-นามสกุล:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">อีเมลติดต่อ:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">ข้อความที่ต้องการติดต่อ:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">ส่งข้อมูลติดต่อ</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>ที่อยู่ของเรา</h2> <p>123 ถนนพาสเทล แขวงแมวเหมียว เขตน่ารัก กรุงเทพฯ 10XXX</p>
+            <div class="map-container"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2929004558!2d100.4930263!3d13.7538258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ1JzEzLjgiTiAxMDDCsDI5JzM0LjkiRQ!5e0!3m2!1sth!2sth!4v1620000000000" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>© 2025 Cat Care Home - บริการด้วยหัวใจเพื่อเหมียวของคุณ</p></footer>
+</body>
+</html>

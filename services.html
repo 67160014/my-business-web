@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Services - Cat Care Home</title>
+    <style>
+        /* ใส่ CSS เดียวกับด้านบน */
+        :root { --pastel-pink: #fce4ec; --pastel-blue: #e3f2fd; --deep-pink: #f06292; --deep-blue: #64b5f6; }
+        body { font-family: 'Kanit', sans-serif; margin: 0; background-color: #fffafb; }
+        header { background-color: var(--pastel-blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--pastel-pink); }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+        nav a { text-decoration: none; color: #5c6bc0; font-weight: bold; }
+        main { padding: 40px 10%; }
+        section { margin-bottom: 40px; padding: 20px; background: white; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); }
+        h2 { color: var(--deep-blue); }
+        
+        /* สไตล์ตารางพาสเทล */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 15px; overflow: hidden; }
+        th { background-color: var(--pastel-blue); color: #5c6bc0; padding: 15px; }
+        td { border: 1px solid var(--pastel-pink); padding: 12px; text-align: center; }
+        tr:hover { background-color: #fff9fa; }
+        footer { background-color: var(--pastel-pink); text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/loogocat.png" alt="Logo" width="60"><strong>Cat Care Home</strong></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>บริการของเรา</h1> <section> <h2>1. บริการรับฝากรายวัน (Day Care)</h2>
+            <p>ดูแลแมวระหว่างวันในห้องปรับอากาศ พร้อมกิจกรรมสันทนาการและขนมแมวเลียพรีเมียม</p>
+        </section>
+
+        <section> <h2>2. โรงแรมแมวค้างคืน (Cat Hotel)</h2>
+            <p>ห้องพักส่วนตัวกว้างขวาง มีต้นไม้แมวและระบบฟอกอากาศแยกห้อง เพื่อความผ่อนคลายสูงสุด</p>
+        </section>
+
+        <section> <h2>เปรียบเทียบแพ็กเกจ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>คุณสมบัติ</th>
+                        <th>Standard Room</th>
+                        <th>VIP Suite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>พื้นที่</td>
+                        <td>1.5 x 1.5 เมตร</td>
+                        <td>3.0 x 3.0 เมตร</td>
+                    </tr>
+                    <tr>
+                        <td>กล้อง CCTV</td>
+                        <td>-</td>
+                        <td>ดูผ่านมือถือได้ 24 ชม.</td>
+                    </tr>
+                    <tr>
+                        <td>บริการแปรงขน</td>
+                        <td>วันละ 1 ครั้ง</td>
+                        <td>ไม่จำกัดจำนวนครั้ง</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer><p>© 2025 Cat Care Home - บริการด้วยหัวใจเพื่อเหมียวของคุณ</p></footer>
+</body>
+</html>

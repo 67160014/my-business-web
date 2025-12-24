@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cat Care Home</title>
+    <style>
+        /* ใช้ CSS เดียวกับหน้า Index ของคุณ */
+        :root { --pastel-pink: #fce4ec; --pastel-blue: #e3f2fd; --deep-pink: #f06292; --deep-blue: #64b5f6; }
+        body { font-family: 'Kanit', sans-serif; margin: 0; background-color: #fffafb; color: #555; }
+        header { background-color: var(--pastel-blue); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--pastel-pink); }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+        nav a { text-decoration: none; color: #5c6bc0; font-weight: bold; }
+        main { padding: 40px 10%; line-height: 1.8; }
+        h2 { color: var(--deep-pink); border-left: 5px solid var(--deep-blue); padding-left: 15px; }
+        
+        /* สไตล์พิเศษสำหรับหน้า About */
+        .team-container { display: flex; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+        figure { background: white; padding: 15px; border-radius: 15px; border: 2px solid var(--pastel-pink); text-align: center; margin: 0; }
+        figure img { border-radius: 10px; margin-bottom: 10px; }
+        figcaption { font-weight: bold; color: #5c6bc0; }
+        .back-home { display: inline-block; margin-top: 30px; color: var(--deep-pink); text-decoration: none; font-weight: bold; }
+        footer { background-color: var(--pastel-pink); text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/loogocat.png" alt="Logo" width="60">
+            <strong>Cat Care Home</strong>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>เรื่องราวของบริษัท</h2> <p>Cat Care Home เริ่มต้นจากความรักที่มีต่อแมว เรามุ่งมั่นสร้างสถานที่พักผ่อนที่ปลอดภัยและผ่อนคลายที่สุดสำหรับสมาชิกสี่ขาในครอบครัวของคุณ</p>
+        </section>
+
+        <section>
+            <h2>ทีมงานของเรา</h2> <div class="team-container">
+                <figure>
+                    <img src="images/team-member-1.jpg" alt="พี่เลี้ยงแมว" width="150">
+                    <figcaption>คุณสมศรี - ผู้เชี่ยวชาญด้านพฤติกรรมแมว</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/team-member-1.jpg" alt="สัตวบาล" width="150">
+                    <figcaption>คุณสมชาย - พี่เลี้ยงแมวมือโปร</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mission & Vision</h2> <p><strong>Mission:</strong> ให้การดูแลแมวด้วยมาตรฐานความสะอาดและความปลอดภัยสูงสุด</p>
+            <p><strong>Vision:</strong> เป็นบ้านหลังที่สองที่แมวทุกตัวอยากกลับมาพักผ่อน</p>
+        </section>
+
+        <a href="index.html" class="back-home">← กลับหน้าแรก</a> </main>
+
+    <footer>
+        <p>© 2025 Cat Care Home - บริการด้วยหัวใจเพื่อเหมียวของคุณ</p>
+    </footer>
+</body>
+</html>
