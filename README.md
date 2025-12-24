@@ -5,17 +5,6 @@
 
 ---
 
-## 📂 โครงสร้างไฟล์ (File Structure)
-- images/
-  - loogocat.png
-- index.html
-- about.html
-- services.html
-- contact.html
-- README.md
-
----
-
 ## 📸 รูปหน้าจอทั้งหมด (Screenshots)
 
 ### หน้าแรก
@@ -54,3 +43,4 @@ my-business-web/
 ├── contact.html
 ├── .gitignore
 └── README.md
+
