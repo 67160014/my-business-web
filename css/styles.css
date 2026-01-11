@@ -1,0 +1,229 @@
+/* =========================================
+   1. RESET & DEFAULTS [cite: 8, 171]
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* [cite: 10] Normalize */
+}
+
+html {
+    font-size: 16px; /* Base font size [cite: 38] */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kanit', sans-serif; /* [cite: 11] */
+    line-height: 1.6; /* [cite: 58] line-height >= 1.5 */
+    background-color: #fffafb; /* [cite: 11] */
+    color: #555;
+}
+
+/* =========================================
+   2. TYPOGRAPHY & COLORS [cite: 49, 176]
+   ========================================= */
+:root {
+    /* Color Palette [cite: 51] */
+    --pastel-pink: #fce4ec;
+    --pastel-blue: #e3f2fd;
+    --deep-pink: #f06292;   /* Accent */
+    --deep-blue: #64b5f6;   /* Primary */
+    --text-color: #555555;  /* Neutral */
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700; /* [cite: 57] */
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* [cite: 62] Optional text effect */
+}
+
+h1 { font-size: 2.5rem; color: var(--deep-pink); } /* [cite: 14, 39] Hero title */
+h2 { font-size: 2rem; color: var(--deep-pink); border-left: 5px solid var(--deep-blue); padding-left: 1rem; } /* [cite: 15] Section heading */
+h3 { font-size: 1.5rem; color: var(--deep-blue); } /* [cite: 16] Subsection */
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6; /* [cite: 17] */
+}
+
+a {
+    text-decoration: none; /* [cite: 60, 163] Remove underline */
+    color: #5c6bc0;
+    transition: all 0.3s ease; /* [cite: 18] */
+}
+
+a:hover {
+    color: var(--deep-pink); /* [cite: 164] */
+    text-decoration: underline;
+}
+
+/* =========================================
+   3. LAYOUT & CONTAINERS [cite: 179]
+   ========================================= */
+.container {
+    width: 90%; /* [cite: 43] */
+    max-width: 1200px; /* [cite: 82] */
+    margin: 0 auto; /* [cite: 83] Center */
+    padding: 40px 20px; /* [cite: 84] */
+}
+
+.section {
+    margin-bottom: 4rem; /* [cite: 23] Spacing between sections */
+}
+
+/* =========================================
+   4. COMPONENTS: HEADER & NAV [cite: 187]
+   ========================================= */
+#header { /* [cite: 25] ID Selector */
+    background-color: var(--pastel-blue);
+    padding: 15px 5%; /* [cite: 67] */
+    border-bottom: 2px solid var(--pastel-pink); /* [cite: 69] */
+    
+    /* Sticky Positioning [cite: 90, 91, 92] */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* [cite: 101] */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* [cite: 106] Flexbox for menu */
+    gap: 20px; /* [cite: 68] Margin between items */
+}
+
+nav a:hover {
+    /* Menu hover effect [cite: 28, 159] */
+    color: var(--deep-pink);
+}
+
+/* =========================================
+   5. COMPONENTS: HERO SECTION
+   ========================================= */
+.hero { /* [cite: 20] Class Selector */
+    height: 100vh; /* [cite: 47] Viewport Height */
+    background: linear-gradient(to bottom, var(--pastel-blue), var(--pastel-pink)); /* [cite: 74] */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* [cite: 95] */
+    padding: 60px 20px; /* [cite: 72] */
+}
+
+.hero h1 {
+    font-size: 5vw; /* [cite: 48] Responsive font size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* [cite: 64] */
+}
+
+/* =========================================
+   6. COMPONENTS: CARDS & SERVICES [cite: 21]
+   ========================================= */
+.services-grid {
+    display: flex; /* [cite: 116, 124] Flexbox Layout */
+    flex-wrap: wrap; /* [cite: 118] */
+    gap: 20px; /* [cite: 117] */
+    justify-content: center;
+}
+
+.card { /* [cite: 21, 201] Reusable Class */
+    background: white;
+    border: 1px solid #ddd; /* [cite: 78] */
+    border-radius: 8px; /* [cite: 79] */
+    padding: 20px; /* [cite: 76] */
+    margin: 10px 0; /* [cite: 77] */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* [cite: 35, 80] */
+    flex: 1; /* [cite: 121] */
+    min-width: 300px; /* [cite: 122] */
+    text-align: center;
+    transition: transform 0.3s ease; /* [cite: 157] */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* [cite: 156] Hover Effect */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   7. COMPONENTS: TEAM (GRID LAYOUT)
+   ========================================= */
+.team-container {
+    display: grid; /* [cite: 128] CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* [cite: 129] Responsive Grid */
+    gap: 20px; /* [cite: 130] */
+    margin-top: 20px;
+}
+
+.team-member { /* [cite: 131] */
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid var(--pastel-pink);
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%; /* [cite: 45] Responsive Image */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =========================================
+   8. COMPONENTS: BUTTONS & FORMS [cite: 22]
+   ========================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--deep-pink);
+    color: white !important;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* [cite: 145] */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* [cite: 148] Darker color */
+    transform: translateY(-2px); /* [cite: 153] */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* [cite: 154] */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* [cite: 137] Form Layout */
+    gap: 15px; /* [cite: 138] */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; /* [cite: 139] */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* =========================================
+   9. FOOTER & FIXED ELEMENTS
+   ========================================= */
+#footer { /* [cite: 26] ID Selector */
+    background-color: var(--pastel-pink); /* [cite: 88] */
+    padding: 30px 20px; /* [cite: 86] */
+    margin-top: 50px; /* [cite: 87] */
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed; /* [cite: 98] Fixed positioning */
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--deep-blue);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 50; /* [cite: 102] */
+    display: none; /* JS needed to toggle, or just show it */
+}
