@@ -8,16 +8,20 @@
 ## 📸 รูปหน้าจอทั้งหมด (Screenshots)
 
 ### หน้าแรก
-![หน้าแรก](images/ชื่อรูปหน้าแรกของคุณ.png)
+![หน้าแรก](<img width="1895" height="941" alt="Screenshot 2026-01-11 125824" src="https://github.com/user-attachments/assets/b06e932c-dbb5-4231-820c-e22dea7e7394" />
+)
 
 ### เกี่ยวกับเรา
-![เกี่ยวกับเรา](images/ชื่อรูปหน้าเกี่ยวกับเราของคุณ.png)
+![เกี่ยวกับเรา](<img width="1900" height="961" alt="Screenshot 2026-01-11 125834" src="https://github.com/user-attachments/assets/5353e25d-9108-4db8-941c-3a0be7a021d3" />
+)
 
 ### บริการ
-![บริการ](images/ชื่อรูปหน้าบริการของคุณ.png)
+![บริการ](<img width="1897" height="955" alt="Screenshot 2026-01-11 125843" src="https://github.com/user-attachments/assets/ee215aa5-6480-40df-b50e-59a7c135048e" />
+)
 
 ### ติดต่อเรา
-![ติดต่อเรา](images/ชื่อรูปหน้าติดต่อของคุณ.png)
+![ติดต่อเรา](<img width="1900" height="958" alt="Screenshot 2026-01-11 125851" src="https://github.com/user-attachments/assets/1e39f2b6-aafb-40b0-94d0-83c3f147cbe5" />
+)
 
 ---
 
@@ -44,3 +48,9 @@ my-business-web/
 ├── .gitignore
 └── README.md
 
+## 👤 ผู้จัดทำ
+
+* **รหัสนิสิต:** 67160014
+* **ชื่อ-นามสกุล:** (ใส่ชื่อของคุณตรงนี้)
+* **คณะ/สาขา:** (ใส่คณะของคุณตรงนี้)
+* **วิชา:** Web Development (Assignment #2)
